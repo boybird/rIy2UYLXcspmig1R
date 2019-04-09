@@ -1,0 +1,10 @@
+<ul>
+{{range $id,$item := .Data}}
+<li id="li_{{$id}}"> {{$item.Name}} </li>
+{{end}}
+</ul>
+<p>page: {{.Page}}</p>
+<p>total: {{.Total}}</p>
+<p>page number: {{.Page_num}}</p>
+<p>pagesize: {{.Pagesize}}</p>
+

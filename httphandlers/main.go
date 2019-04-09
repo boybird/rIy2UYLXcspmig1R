@@ -28,7 +28,7 @@ func editHandler(w http.ResponseWriter, r *http.Request) {
 }
 func main() {
 	http.HandleFunc("/", hello)
-	http.HandleFunc("/view/",viewHandler)
+	http.HandleFunc("/view/", viewHandler)
 
 	err := http.ListenAndServe(":8087", nil)
 	if err != nil {
